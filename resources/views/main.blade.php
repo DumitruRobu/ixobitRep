@@ -9,4 +9,7 @@
     <p><br></p>
     <p><a href="{{route('AddNewParam')}}"> Adauga parametri </a></p>
     <p><a href="{{route('ViewAllParams')}}"> Vezi toti parametrii </a></p>
+    <p><br></p>
+    <p><a href="{{route('AddNewProdus')}}"> Adauga product </a></p>
+    <p><a href="{{route('ViewAllProdus')}}"> Vezi toate produsele </a></p>
 @endsection
