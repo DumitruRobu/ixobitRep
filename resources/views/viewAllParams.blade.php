@@ -5,7 +5,7 @@
 @section("body")
     <p>All your params are:</p>
 
-    <table>
+    <table id="paramTable">
         <thead>
         <tr>
             <th>Memory</th>
@@ -44,11 +44,11 @@
                 <td>{{$param['processorModel']}}</td>
                 <td>{{$param['isRecommended']}}</td>
 
-                <td><a href="{{ route('EditParam', ['id' => $param['id']]) }}">Edit</a></td>
+                <td><a href="{{ route('EditParam', ['id' => $param['id']]) }}">Edit <i class="fa-solid fa-pen"></i></a></td>
                 <form action="{{ route('DeleteParam', ['id' => $param['id']]) }}" method="POST">
                     @csrf
                     @method("DELETE")
-                    <td><button type="submit">Delete</button></td>
+                    <td><button type="submit" id="deleteButton">Delete <i class="fa-solid fa-trash"></i></button></td>
                 </form>
 
             </tr>

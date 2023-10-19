@@ -41,3 +41,204 @@ body{
     width: 300px;
     border-radius: 10px;
 }
+
+/* =============================Stilizam tabelul viewAllParams*/
+#paramTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#paramTable th, #paramTable td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#paramTable th {
+    background-color: #f2f2f2;
+}
+
+#paramTable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+
+/* =============================Stilizam tabelul viewAllParams*/
+
+.styled-table {
+    border-collapse: collapse;
+    width: 35%;
+    margin-top: 20px;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.styled-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.styled-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.styled-table a {
+    text-decoration: none;
+    color: black;
+}
+
+.styled-table a:hover {
+    color: #0056b3;
+}
+
+#deleteButton{
+    background-color: transparent;
+}
+#deleteButton:hover{
+    background-color: indianred;
+}
+#deleteButton:active{
+    transform: translateY(3px);
+}
+
+#allProducts{
+    background-color: rgb(208,186,222);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#allProducts li {
+    margin-bottom: 10px;
+}
+#allProducts ul {
+    list-style-position: inside; /* Move bullet points inside the content box */
+}
+
+#allProducts:hover {
+    background-color:rgb(165,131,187);
+}
+
+
+#allProducts a{
+    text-decoration: none;
+    color: #0056b3;
+    font-size: 20px;
+}
+#products{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.efectDeHover:hover{
+    background-color: rgb(157,125,177);
+}
+
+#options{
+    display: flex;
+    gap: 15px;
+}
+#EditBtn{
+    background-color: rgb(121,164,193);
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #0056b3;
+}
+#EditBtn:hover {
+    background-color: #0056b3;
+    color:white;
+}
+
+#DeleteBtn{
+    background-color: indianred;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #0056b3;
+}
+#DeleteBtn:hover {
+    background-color: orangered;
+    color:white;
+}
+#DeleteBtn:hover{
+    cursor:pointer;
+}
+#BuyBtn{
+    background-color: lightgreen;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #0056b3;
+}
+#BuyBtn:hover {
+    background-color: greenyellow;
+    color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#productDetails{
+    background-color: rgb(208,186,222);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#productDetails li {
+    margin-bottom: 10px;
+}
+#productDetails ul {
+    list-style-position: inside; /* Move bullet points inside the content box */
+}
+
+#productDetails a{
+    text-decoration: none;
+    color: #0056b3;
+    font-size: 20px;
+}
+#buyOrBack{
+    margin-top: 15px;
+
+}
+
+#buy:hover{
+    background-color: lightgreen;
+
+}
+#back:hover{
+    background-color: darkgrey;
+}
+#backButton{
+    font-size: 20px;
+}

@@ -12,4 +12,9 @@
     <p><br></p>
     <p><a href="{{route('AddNewProdus')}}"> Adauga product </a></p>
     <p><a href="{{route('ViewAllProdus')}}"> Vezi toate produsele </a></p>
+    <p><br></p>
+    <p><a href="{{route('AddNewClient')}}"> Adauga client </a></p>
+    <p><a href="{{route('ViewAllClients')}}"> Vezi toti clientii </a></p>
+    <p><br></p>
+    <p><a href="{{route('ViewAllVinzari')}}"> Vezi toate vinzarile </a></p>
 @endsection

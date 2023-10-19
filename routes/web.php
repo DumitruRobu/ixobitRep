@@ -40,4 +40,23 @@ Route::group(['namespace' => 'App\Http\Controllers\ProduseControllers'], functio
     Route::get('/editProdus/{id}', "EditProdusController")->name("EditProdus");
     Route::post('/updateProdus/{id}', "UpdateProdusController")->name("UpdateProdus");
     Route::get('/viewProdus/{id}', "ViewProdusController")->name("ViewProdus");
+    Route::get('/letsBuy/{id}', "BuyProdusController")->name("BuyProdus");
+});
+
+Route::group(['namespace' => 'App\Http\Controllers\ClientControllers'], function() {
+    Route::get('/addClient', "AddNewClientController")->name("AddNewClient");
+    Route::post('/addClient', "StoreNewClientController")->name("StoreNewClient");
+    Route::get('/viewAllClients', "ViewAllClientsController")->name("ViewAllClients");
+    Route::delete('/deleteClient/{id}', "DeleteClientController")->name("DeleteClient");
+    Route::get('/editClient/{id}', "EditClientController")->name("EditClient");
+    Route::post('/updateClient/{id}', "UpdateClientController")->name("UpdateClient");
+});
+
+Route::group(['namespace' => 'App\Http\Controllers\VinzariControllers'], function() {
+    Route::get('/addVinzare', "AddNewVinzareController")->name("AddNewVinzare");
+    Route::post('/addVinzare', "StoreNewVinzareController")->name("StoreNewVinzare");
+    Route::get('/viewAllVinzari', "ViewAllVinzariController")->name("ViewAllVinzari");
+    Route::delete('/deleteVinzare/{id}', "DeleteVinzareController")->name("DeleteVinzare");
+    Route::get('/editVinzare/{id}', "EditVinzareController")->name("EditVinzare");
+    Route::post('/updateVinzare/{id}', "UpdateVinzareController")->name("UpdateVinzare");
 });

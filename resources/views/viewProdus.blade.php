@@ -4,8 +4,8 @@
 
 @section("body")
 
-            <div id="allProducts">
-                <p>Product Details: </p>
+            <div id="productDetails">
+                <p><b>PRODUCT DETAILS: </b></p>
                 <img src="{{$produs['image']}}" id="imaginePreview">
                 <p>Barcode: {{$produs['barcode']}}</p>
                 @if($produs->brand)
@@ -31,6 +31,17 @@
                     <li>Processor Model: {{$produs->params->processorModel}}</li>
                     <li>Is Recommended: {{($produs->params->isRecommended) ? "Yes" : "No"}}</li>
                 </ul>
+
+                <div id="options">
+                    <a href="{{ route('EditProdus', ['id' => $produs['id']]) }}" id="EditBtn"> Edit product</a>
+                    <form action="{{ route('DeleteProdus', ['id' => $produs['id']]) }}" method="POST">
+                        @csrf
+                        @method("DELETE")
+                        <button type="submit" id="DeleteBtn">Delete product</button>
+                    </form>
+                    <a href="{{ route('BuyProdus', ['id' => $produs['id']]) }}" id="BuyBtn">Buy product</a>
+                </div>
+
 
             </div>
             <a href="{{ route('ViewAllProdus') }}">&larr; Back</a>

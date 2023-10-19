@@ -1,24 +1,26 @@
 @extends("layouts.layout")
 
-@section("title", "Main Page")
+@section("title", "All Clients' Page")
 
 @section("body")
-    <p>All your brands are:</p>
+    <p>All your clients are:</p>
 
     <table class="styled-table">
         <thead>
         <tr>
             <th>Name</th>
+            <th>Surname</th>
             <th>Edit</th>
             <th>Delete</th>
         </tr>
         </thead>
         <tbody>
-        @foreach($allBrands as $brand)
+        @foreach($allClients as $client)
             <tr>
-                <td>{{$brand['name']}}</td>
-                <td><a href="{{ route('EditBrand', ['id' => $brand['id']]) }}">Edit <i class="fa-solid fa-pen"></i></a></td>
-                <form action="{{ route('DeleteBrand', ['id' => $brand['id']]) }}" method="POST">
+                <td>{{$client['nume']}}</td>
+                <td>{{$client['prenume']}}</td>
+                <td><a href="{{ route('EditClient', ['id' => $client['id']]) }}">Edit <i class="fa-solid fa-pen"></i></a></td>
+                <form action="{{ route('DeleteClient', ['id' => $client['id']]) }}" method="POST">
                     @csrf
                     @method("DELETE")
                     <td><button type="submit" id="deleteButton">Delete <i class="fa-solid fa-trash"></i></button></td>
