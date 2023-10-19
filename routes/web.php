@@ -60,3 +60,5 @@ Route::group(['namespace' => 'App\Http\Controllers\VinzariControllers'], functio
     Route::get('/editVinzare/{id}', "EditVinzareController")->name("EditVinzare");
     Route::post('/updateVinzare/{id}', "UpdateVinzareController")->name("UpdateVinzare");
 });
+
+
